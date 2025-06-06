@@ -1,12 +1,27 @@
-# Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+platform :ios, '15.1' # JitsiMeetSDK requires minimum iOS 15.1
+
 prepare_react_native_project!
+
+# Pre-install hook to handle Firebase dependencies
+pre_install do |installer|
+  # Force modular headers for specific pods
+  installer.pod_targets.each do |pod|
+    if pod.name.start_with?('Firebase') || pod.name.start_with?('Google')
+      def pod.build_type
+        Pod::BuildType.static_library
+      end
+    end
+  end
+end
+
+# Remove use_modular_headers! as it's causing issues
+# use_modular_headers!
 
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
@@ -19,17 +34,78 @@ target 'teletipapp' do
 
   use_react_native!(
     :path => config[:reactNativePath],
-    # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  # 🔔 Push notifications (uncomment if needed)
+  # pod 'RNCPushNotificationIOS', :path => '../node_modules/@react-native-community/push-notification-ios'
+
+  # 🎥 JitsiMeet SDK (WebRTC dahil) - Fixed: Use official CocoaPods version
+  pod 'JitsiMeetSDK'
+
+  # Explicitly specify Firebase dependencies with modular headers
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCoreInternal', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true if defined?(Pod)
+  pod 'GoogleAppMeasurement', :modular_headers => true if defined?(Pod)
+
+  # ⚙️ Environment variables (uncomment if needed)
+  # pod 'react-native-config', :path => '../node_modules/react-native-config'
+
   post_install do |installer|
-    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
     react_native_post_install(
       installer,
       config[:reactNativePath],
-      :mac_catalyst_enabled => false,
-      # :ccache_enabled => true
+      :mac_catalyst_enabled => false
     )
+
+    # ⚙️ Comprehensive build settings to fix compilation issues
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        # Basic settings
+        config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+        config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.1'
+        
+        # Fix modular header issues
+        config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        config.build_settings['CLANG_WARN_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'NO'
+        
+        # Disable problematic warnings
+        config.build_settings['GCC_WARN_INHIBIT_ALL_WARNINGS'] = 'YES'
+        config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
+        
+        # Architecture settings
+        config.build_settings['VALID_ARCHS'] = 'arm64'
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386'
+        
+        # Target-specific fixes
+        case target.name
+        when 'fmt'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['GCC_C_LANGUAGE_STANDARD'] = 'c11'
+          config.build_settings['CLANG_WARN_EVERYTHING'] = 'NO'
+        when 'JitsiWebRTC', 'JitsiMeetSDK'
+          config.build_settings['ENABLE_BITCODE'] = 'NO'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+        when 'Sentry'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_WARN_EVERYTHING'] = 'NO'
+        when 'glog', 'React-perflogger'
+          config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'c++17'
+          config.build_settings['CLANG_WARN_EVERYTHING'] = 'NO'
+        when /Firebase/
+          config.build_settings['DEFINES_MODULE'] = 'YES'
+          config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        end
+        
+        # Additional fixes for problematic pods
+        if ['SocketRocket', 'nanopb', 'libwebp'].include?(target.name)
+          config.build_settings['CLANG_WARN_EVERYTHING'] = 'NO'
+          config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+        end
+      end
+    end
   end
 end
