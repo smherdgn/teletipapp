@@ -1,0 +1,16 @@
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs", // Or as per Detox requirements
+    "types": ["detox", "jest", "node"], // Include Detox, Jest (for matchers), and Node types
+    "noEmit": true // E2E tests are typically not "compiled" in the same way as app source
+  },
+  "include": [
+    "e2e/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests" // Exclude unit/integration tests
+  ]
+}

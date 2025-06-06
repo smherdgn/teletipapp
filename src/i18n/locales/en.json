@@ -1,0 +1,243 @@
+
+{
+  "common": {
+    "appName": "TeleTıp App",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "save": "Save",
+    "featureComingSoon": "This feature is coming soon!",
+    "yes": "Yes",
+    "no": "No",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Submit",
+    "pleaseWait": "Please wait...",
+    "oops": "Oops!"
+  },
+  "loading": {
+    "default": "Loading, please wait...",
+    "authenticating": "Authenticating...",
+    "joiningRoom": "Joining room...",
+    "startingCall": "Preparing call..."
+  },
+  "login": {
+    "title": "Welcome Back!",
+    "subtitle": "Log in to access your tele-health services.",
+    "emailPlaceholder": "Enter your email address",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Login",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up",
+    "errorTitle": "Login Failed",
+    "fillFieldsError": "Please enter your email and password.",
+    "genericError": "Invalid email or password. Please try again.",
+    "biometricLoginButton": "Biometric Login",
+    "biometricPrompt": "Authenticate to log in",
+    "biometricSuccessTitle": "Biometric Login",
+    "biometricSuccessMessage": "Biometric authentication successful. Logging you in...",
+    "biometricErrorTitle": "Biometric Error",
+    "biometricErrorGeneric": "Biometric authentication failed or was cancelled.",
+    "biometricNotAvailableTitle": "Biometrics Unavailable",
+    "biometricNotAvailableMessage": "Biometric authentication is not available or not set up on this device."
+  },
+  "roomEntry": {
+    "title": "Join Consultation",
+    "subtitle": "Enter the Room ID to start or join a video consultation.",
+    "roomIdPlaceholder": "Enter Room ID",
+    "joinButton": "Join Room",
+    "logoutButton": "Logout",
+    "invalidRoomId": "Please enter a valid Room ID.",
+    "joiningRoom": "Joining Room...",
+    "logoutConfirmationTitle": "Confirm Logout",
+    "logoutConfirmationMessage": "Are you sure you want to logout?",
+    "consentRequiredTitle": "Consent Required",
+    "consentRequiredMessage": "To proceed, please review and accept our data processing terms.",
+    "manageConsent": "Review Consent"
+  },
+  "call": {
+    "title": "Video Consultation",
+    "roomId": "Room ID: {{roomId}}",
+    "initializing": "Initializing call...",
+    "connecting": "Connecting to call...",
+    "waitingForParticipant": "Waiting for other participant(s)...",
+    "participantJoined": "{{name}} joined the call.",
+    "participantLeft": "{{name}} left the call.",
+    "callEnded": "Call Ended",
+    "callFailed": "Call Failed",
+    "connectionFailed": "Connection failed: {{error}}",
+    "endingCall": "Ending call...",
+    "toggleCameraOn": "Turn Camera On",
+    "toggleCameraOff": "Turn Camera Off",
+    "toggleMicOn": "Unmute Microphone",
+    "toggleMicOff": "Mute Microphone",
+    "endCallButton": "End Call",
+    "switchCamera": "Switch Camera",
+    "permissionsNeeded": "Permissions Needed",
+    "cameraPermissionDenied": "Camera permission is required for video calls. Please enable it in settings.",
+    "microphonePermissionDenied": "Microphone permission is required for video calls. Please enable it in settings.",
+    "remoteVideo": "Remote participant's video",
+    "localVideo": "Your video",
+    "errorTitle": "Call Error",
+    "mediaError": "Could not access camera/microphone. Please check permissions.",
+    "setupError": "Failed to set up the call. Please try again.",
+    "joinRoomFailed": "Failed to join room: {{error}}",
+    "callNotFound": "Call session not found.",
+    "goBack": "Go Back",
+    "status": {
+      "idle": "Idle",
+      "dialing": "Dialing...",
+      "ringing": "Ringing...",
+      "active": "Active",
+      "ended": "Ended",
+      "failed": "Failed"
+    },
+    "connectionState": {
+      "new": "New",
+      "connecting": "Connecting...",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "failed": "Failed",
+      "closed": "Closed"
+    },
+    "statusMessage": {
+        "new": "Preparing connection...",
+        "connecting": "Establishing connection...",
+        "connected": "Connected",
+        "disconnected": "Connection lost. Attempting to reconnect...",
+        "failed": "Connection failed. Please check your network.",
+        "closed": "Call connection closed."
+    },
+    "speakerToggle": "Toggle Speaker",
+    "speakerFeatureNote": "Speaker control may require InCallManager or OS-level management.",
+    "sharedDocument": "Shared document: {{documentName}}",
+    "docSharedTitle": "Document Shared",
+    "docSharedMessage": "{{documentName}} sent (simulation).",
+    "docShareErrorUri": "Could not get a usable URI for the selected document.",
+    "docShareError": "Failed to share document.",
+    "callDeclinedTitle": "Call Declined",
+    "callDeclinedMessage": "{{name}} declined your call."
+  },
+  "security": {
+    "deviceCompromised": "Security Alert: Your device appears to be compromised (jailbroken/rooted). For your security, app access is restricted.",
+    "contactSupport":"Please secure your device or contact support for assistance."
+  },
+  "toastMessages": {
+    "loginFailed": "Login failed. Please check your credentials.",
+    "loginSuccess": "Login successful!",
+    "logoutSuccess": "Logged out successfully.",
+    "roomIdRequired": "Room ID is required.",
+    "permissionsGranted": "Permissions granted.",
+    "permissionsDenied": "Some permissions were denied. Functionality may be limited.",
+    "cameraUnavailable": "Camera is unavailable.",
+    "micUnavailable": "Microphone is unavailable.",
+    "callJoined": "You joined the call.",
+    "callLeft": "You left the call.",
+    "userJoinedCall": "{{name}} joined the call.",
+    "userLeftCall": "{{name}} left the call.",
+    "consentRequired": "You must accept all terms to continue."
+  },
+  "consent": {
+    "modalTitle": "Data Processing Consent",
+    "modalDescription": "To use our tele-medicine services, please review and confirm the following. Your privacy and data security are important to us.",
+    "cameraAccess": "Camera Access",
+    "cameraAccessDescription": "Allow access to your camera for video consultations.",
+    "microphoneAccess": "Microphone Access",
+    "microphoneAccessDescription": "Allow access to your microphone for audio during consultations.",
+    "dataTransmission": "Secure Data Transmission",
+    "dataTransmissionDescription": "Your audio and video data will be transmitted securely (encrypted with SRTP/DTLS, signaling via WSS).",
+    "medicalDataProcessing": "Medical Consultation Data",
+    "medicalDataProcessingDescription": "Processing of health-related data discussed during consultations is managed in compliance with privacy laws (e.g., KVKK Art. 5/2-c vital interest).",
+    "allConsentsRequired": "All consents must be given to proceed.",
+    "agreeButton": "I Agree",
+    "declineButton": "Decline",
+    "declinedMessage": "You have declined the consent. Your session will be terminated.",
+    "legalReference": "For more information, please review our Privacy Policy. (Ref: GDPR Art. 6(1)(a), KVKK Art. 5/1)"
+  },
+   "settings": {
+    "title": "Settings",
+    "theme": {
+      "title": "App Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "language": {
+      "title": "Language",
+      "english": "English",
+      "turkish": "Türkçe"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "enable": "Enable Notifications"
+    },
+    "account": {
+      "title": "Account",
+      "editProfile": "Edit Profile",
+      "changePassword": "Change Password",
+      "manageConsent": "Manage Consent"
+    },
+    "about": {
+      "title": "About",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "version": "Version {{version}}"
+    },
+    "logoutButton": "Logout"
+  },
+  "profile": {
+    "errorTitle": "Profile Error",
+    "userNotFound": "User profile not found.",
+    "fetchError": "Could not fetch profile information.",
+    "avatarAlt": "{{name}}'s avatar",
+    "fullNameLabel": "Full Name",
+    "emailLabel": "Email Address",
+    "roleLabel": "Role",
+    "editProfile": "Edit Profile",
+    "editProfileButton": "Edit My Profile",
+    "featureComingSoon": "This feature is under development.",
+    "goBack": "Go Back"
+  },
+  "roles": {
+    "patient": "Patient",
+    "doctor": "Doctor"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "guest": "Guest",
+    "viewProfile": "View Profile",
+    "availableDoctors": "Available Doctors",
+    "callButton": "Call",
+    "noDoctors": "No doctors available at the moment.",
+    "settings": "Settings",
+    "logoutButton": "Logout",
+    "errorTitle": "Error",
+    "userNotFound": "User not found."
+  },
+  "notifications": {
+    "incomingCall": {
+        "title": "Incoming Call from {{callerName}}",
+        "body": "Tap to answer or decline."
+    },
+    "appointment": {
+      "started": {
+        "doctor_title": "Consultation with {{participantName}} Started",
+        "patient_title": "Your Consultation Started",
+        "body": "The consultation (ID: {{appointmentId}}) has begun."
+      },
+      "completed": {
+        "doctor_title": "Consultation with {{participantName}} Completed",
+        "patient_title": "Your Consultation Completed",
+        "body": "The consultation (ID: {{appointmentId}}) has finished."
+      },
+      "reminder": {
+        "doctor_title": "Reminder: {{participantName}}",
+        "patient_title": "Appointment Reminder",
+        "body": "Your appointment with {{participantName}} is in 5 minutes."
+      }
+    }
+  }
+}

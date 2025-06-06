@@ -1,0 +1,168 @@
+
+{
+  "bg-primary": {
+    "backgroundColor": "#007AFF"
+  },
+  "bg-background": {
+    "backgroundColor": "#F2F2F7"
+  },
+  "bg-card": {
+    "backgroundColor": "#FFFFFF"
+  },
+  "text-primary": {
+    "color": "#007AFF"
+  },
+  "text-text": {
+    "color": "#1C1C1E"
+  },
+  "text-white": {
+    "color": "#FFFFFF"
+  },
+  "text-gray-500": {
+    "color": "#8E8E93"
+  },
+  "text-gray-600": {
+    "color": "#6B7280" 
+  },
+  "text-red-500": {
+    "color": "#EF4444"
+  },
+  "border": {
+    "borderWidth": 1
+  },
+  "border-primary": {
+    "borderColor": "#007AFF"
+  },
+  "border-gray-200": {
+    "borderColor": "#E5E7EB"
+  },
+  "border-gray-300": {
+    "borderColor": "#D1D5DB"
+  },
+  "rounded-lg": {
+    "borderRadius": 8
+  },
+  "rounded-md": {
+    "borderRadius": 6
+  },
+  "rounded-full": {
+    "borderRadius": 9999
+  },
+  "p-1": { "padding": 4 },
+  "p-2": { "padding": 8 },
+  "p-3": { "padding": 12 },
+  "p-4": { "padding": 16 },
+  "p-6": { "padding": 24 },
+  "p-8": { "padding": 32 },
+  "py-2": { "paddingTop": 8, "paddingBottom": 8 },
+  "py-3": { "paddingTop": 12, "paddingBottom": 12 },
+  "px-3": { "paddingLeft": 12, "paddingRight": 12 },
+  "px-5": { "paddingLeft": 20, "paddingRight": 20 },
+  "pt-4": { "paddingTop": 16 },
+  "pb-2": { "paddingBottom": 8 },
+  "pl-3": { "paddingLeft": 12 },
+  "pr-2": { "paddingRight": 8 },
+  "pr-3": { "paddingRight": 12 },
+  "m-1": { "margin": 4 },
+  "m-2": { "margin": 8 },
+  "m-4": { "margin": 16 },
+  "mt-1": { "marginTop": 4 },
+  "mt-2": { "marginTop": 8 },
+  "mt-3": { "marginTop": 12 },
+  "mt-4": { "marginTop": 16 },
+  "mt-6": { "marginTop": 24 },
+  "mt-8": { "marginTop": 32 },
+  "mb-1": { "marginBottom": 4 },
+  "mb-2": { "marginBottom": 8 },
+  "mb-3": { "marginBottom": 12 },
+  "mb-4": { "marginBottom": 16 },
+  "mb-6": { "marginBottom": 24 },
+  "mb-8": { "marginBottom": 32 },
+  "ml-2": { "marginLeft": 8 },
+  "mr-2": { "marginRight": 8 },
+  "mt-auto": {
+    "marginTop": "auto"
+  },
+  "w-full": {
+    "width": "100%"
+  },
+  "w-32": { "width": 128 },
+  "h-32": { "height": 128 },
+  "h-48": { "height": 192 },
+  "max-w-sm": {
+    "maxWidth": 384
+  },
+  "flex-1": {
+    "flex": 1
+  },
+  "flex-row": {
+    "flexDirection": "row"
+  },
+  "items-center": {
+    "alignItems": "center"
+  },
+  "justify-center": {
+    "justifyContent": "center"
+  },
+  "justify-between": {
+    "justifyContent": "space-between"
+  },
+  "justify-around": {
+    "justifyContent": "space-around"
+  },
+  "text-xs": { "fontSize": 12, "lineHeight": 16 },
+  "text-sm": { "fontSize": 14, "lineHeight": 20 },
+  "text-base": { "fontSize": 16, "lineHeight": 24 },
+  "text-lg": { "fontSize": 18, "lineHeight": 28 },
+  "text-xl": { "fontSize": 20, "lineHeight": 28 },
+  "text-2xl": { "fontSize": 24, "lineHeight": 32 },
+  "text-3xl": { "fontSize": 30, "lineHeight": 36 },
+  "font-semibold": {
+    "fontWeight": "600"
+  },
+  "font-bold": {
+    "fontWeight": "700"
+  },
+  "font-medium": {
+    "fontWeight": "500"
+  },
+  "text-center": {
+    "textAlign": "center"
+  },
+  "opacity-50": { "opacity": 0.5 },
+  "opacity-70": { "opacity": 0.7 },
+  "shadow": {
+    "shadowColor": "#000",
+    "shadowOffset": {
+      "width": 0,
+      "height": 1
+    },
+    "shadowOpacity": 0.22,
+    "shadowRadius": 2.22,
+    "elevation": 3
+  },
+  "absolute": {
+    "position": "absolute"
+  },
+  "top-4": { "top": 16 },
+  "right-4": { "right": 16 },
+  "left-4": { "left": 16 },
+  "bottom-0": { "bottom": 0 },
+  "left-0": { "left": 0 },
+  "right-0": { "right": 0 },
+  "border-2": { "borderWidth": 2 },
+  "border-4": { "borderWidth": 4 },
+  "border-white": { "borderColor": "#FFFFFF" },
+  "border-t": { "borderTopWidth": 1 },
+  "border-b": { "borderBottomWidth": 1 },
+  "bg-black": { "backgroundColor": "#000000" },
+  "bg-opacity-50": { "backgroundColor": "rgba(0,0,0,0.5)" },
+  "bg-gray-200": { "backgroundColor": "#E5E7EB" },
+  "bg-gray-600": { "backgroundColor": "#4B5563" },
+  "bg-gray-700": { "backgroundColor": "#374151" },
+  "bg-gray-800": { "backgroundColor": "#1F2937" },
+  "bg-red-500": { "backgroundColor": "#EF4444" },
+  "bg-red-600": { "backgroundColor": "#DC2626" },
+  "capitalize": { "textTransform": "capitalize" },
+  "z-10": { "zIndex": 10 }
+}

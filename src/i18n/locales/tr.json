@@ -1,0 +1,243 @@
+
+{
+  "common": {
+    "appName": "TeleTıp Uygulaması",
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "Başarılı",
+    "cancel": "İptal",
+    "ok": "Tamam",
+    "save": "Kaydet",
+    "featureComingSoon": "Bu özellik yakında gelecek!",
+    "yes": "Evet",
+    "no": "Hayır",
+    "logout": "Çıkış Yap",
+    "email": "E-posta",
+    "password": "Şifre",
+    "submit": "Gönder",
+    "pleaseWait": "Lütfen bekleyin...",
+    "oops": "Eyvah!"
+  },
+  "loading": {
+    "default": "Yükleniyor, lütfen bekleyin...",
+    "authenticating": "Kimlik doğrulanıyor...",
+    "joiningRoom": "Odaya katılıyor...",
+    "startingCall": "Görüşme hazırlanıyor..."
+  },
+  "login": {
+    "title": "Tekrar Hoş Geldiniz!",
+    "subtitle": "Tele-sağlık hizmetlerinize erişmek için giriş yapın.",
+    "emailPlaceholder": "E-posta adresinizi girin",
+    "passwordPlaceholder": "Şifrenizi girin",
+    "loginButton": "Giriş Yap",
+    "forgotPassword": "Şifremi Unuttum?",
+    "noAccount": "Hesabınız yok mu?",
+    "signUp": "Kayıt Ol",
+    "errorTitle": "Giriş Başarısız",
+    "fillFieldsError": "Lütfen e-posta ve şifrenizi girin.",
+    "genericError": "Geçersiz e-posta veya şifre. Lütfen tekrar deneyin.",
+    "biometricLoginButton": "Biyometrik Giriş",
+    "biometricPrompt": "Giriş yapmak için kimliğinizi doğrulayın",
+    "biometricSuccessTitle": "Biyometrik Giriş",
+    "biometricSuccessMessage": "Biyometrik kimlik doğrulama başarılı. Giriş yapılıyor...",
+    "biometricErrorTitle": "Biyometrik Hata",
+    "biometricErrorGeneric": "Biyometrik kimlik doğrulama başarısız oldu veya iptal edildi.",
+    "biometricNotAvailableTitle": "Biyometrikler Mevcut Değil",
+    "biometricNotAvailableMessage": "Bu cihazda biyometrik kimlik doğrulama mevcut değil veya kurulu değil."
+  },
+  "roomEntry": {
+    "title": "Görüşmeye Katıl",
+    "subtitle": "Görüntülü görüşme başlatmak veya katılmak için Oda Kimliğini girin.",
+    "roomIdPlaceholder": "Oda Kimliğini Girin",
+    "joinButton": "Odaya Katıl",
+    "logoutButton": "Çıkış Yap",
+    "invalidRoomId": "Lütfen geçerli bir Oda Kimliği girin.",
+    "joiningRoom": "Odaya Katılınıyor...",
+    "logoutConfirmationTitle": "Çıkışı Onayla",
+    "logoutConfirmationMessage": "Çıkış yapmak istediğinizden emin misiniz?",
+    "consentRequiredTitle": "Rıza Gerekli",
+    "consentRequiredMessage": "Devam etmek için lütfen veri işleme koşullarımızı inceleyip kabul edin.",
+    "manageConsent": "Rızayı Gözden Geçir"
+  },
+  "call": {
+    "title": "Görüntülü Görüşme",
+    "roomId": "Oda Kimliği: {{roomId}}",
+    "initializing": "Görüşme başlatılıyor...",
+    "connecting": "Görüşmeye bağlanılıyor...",
+    "waitingForParticipant": "Diğer katılımcı(lar) bekleniyor...",
+    "participantJoined": "{{name}} görüşmeye katıldı.",
+    "participantLeft": "{{name}} görüşmeden ayrıldı.",
+    "callEnded": "Görüşme Sonlandı",
+    "callFailed": "Görüşme Başarısız Oldu",
+    "connectionFailed": "Bağlantı başarısız: {{error}}",
+    "endingCall": "Görüşme sonlandırılıyor...",
+    "toggleCameraOn": "Kamerayı Aç",
+    "toggleCameraOff": "Kamerayı Kapat",
+    "toggleMicOn": "Mikrofonu Aç",
+    "toggleMicOff": "Mikrofonu Kapat",
+    "endCallButton": "Görüşmeyi Bitir",
+    "switchCamera": "Kamera Değiştir",
+    "permissionsNeeded": "İzinler Gerekli",
+    "cameraPermissionDenied": "Görüntülü görüşmeler için kamera izni gereklidir. Lütfen ayarlardan etkinleştirin.",
+    "microphonePermissionDenied": "Görüntülü görüşmeler için mikrofon izni gereklidir. Lütfen ayarlardan etkinleştirin.",
+    "remoteVideo": "Karşı tarafın videosu",
+    "localVideo": "Sizin videonuz",
+    "errorTitle": "Görüşme Hatası",
+    "mediaError": "Kamera/mikrofona erişilemedi. Lütfen izinleri kontrol edin.",
+    "setupError": "Görüşme başlatılamadı. Lütfen tekrar deneyin.",
+    "joinRoomFailed": "Odaya katılım başarısız: {{error}}",
+    "callNotFound": "Görüşme oturumu bulunamadı.",
+    "goBack": "Geri Dön",
+    "status": {
+      "idle": "Boşta",
+      "dialing": "Aranıyor...",
+      "ringing": "Çalıyor...",
+      "active": "Aktif",
+      "ended": "Sonlandı",
+      "failed": "Başarısız"
+    },
+    "connectionState": {
+      "new": "Yeni",
+      "connecting": "Bağlanıyor...",
+      "connected": "Bağlı",
+      "disconnected": "Bağlantı Kesildi",
+      "failed": "Bağlantı Başarısız",
+      "closed": "Bağlantı Kapandı"
+    },
+     "statusMessage": {
+        "new": "Bağlantı hazırlanıyor...",
+        "connecting": "Bağlantı kuruluyor...",
+        "connected": "Bağlı",
+        "disconnected": "Bağlantı koptu. Yeniden bağlanmaya çalışılıyor...",
+        "failed": "Bağlantı başarısız. Lütfen ağınızı kontrol edin.",
+        "closed": "Görüşme bağlantısı kapandı."
+    },
+    "speakerToggle": "Hoparlör Değiştir",
+    "speakerFeatureNote": "Hoparlör kontrolü InCallManager veya işletim sistemi yönetimi gerektirebilir.",
+    "sharedDocument": "Paylaşılan belge: {{documentName}}",
+    "docSharedTitle": "Belge Paylaşıldı",
+    "docSharedMessage": "{{documentName}} gönderildi (simülasyon).",
+    "docShareErrorUri": "Seçilen belge için kullanılabilir bir URI alınamadı.",
+    "docShareError": "Belge paylaşılamadı.",
+    "callDeclinedTitle": "Arama Reddedildi",
+    "callDeclinedMessage": "{{name}} aramanızı reddetti."
+  },
+  "security": {
+    "deviceCompromised": "Güvenlik Uyarısı: Cihazınızın güvenliği ihlal edilmiş görünüyor (jailbreak/root). Güvenliğiniz için uygulama erişimi kısıtlanmıştır.",
+    "contactSupport":"Lütfen cihazınızı güvenli hale getirin veya yardım için destek ile iletişime geçin."
+  },
+  "toastMessages": {
+    "loginFailed": "Giriş başarısız. Lütfen bilgilerinizi kontrol edin.",
+    "loginSuccess": "Giriş başarılı!",
+    "logoutSuccess": "Başarıyla çıkış yapıldı.",
+    "roomIdRequired": "Oda Kimliği gerekli.",
+    "permissionsGranted": "İzinler verildi.",
+    "permissionsDenied": "Bazı izinler reddedildi. İşlevsellik sınırlı olabilir.",
+    "cameraUnavailable": "Kamera kullanılamıyor.",
+    "micUnavailable": "Mikrofon kullanılamıyor.",
+    "callJoined": "Görüşmeye katıldınız.",
+    "callLeft": "Görüşmeden ayrıldınız.",
+    "userJoinedCall": "{{name}} görüşmeye katıldı.",
+    "userLeftCall": "{{name}} görüşmeden ayrıldı.",
+    "consentRequired": "Devam etmek için tüm koşulları kabul etmelisiniz."
+  },
+  "consent": {
+    "modalTitle": "Veri İşleme Rızası",
+    "modalDescription": "Tele-tıp hizmetlerimizi kullanmak için lütfen aşağıdakileri inceleyip onaylayın. Gizliliğiniz ve veri güvenliğiniz bizim için önemlidir.",
+    "cameraAccess": "Kamera Erişimi",
+    "cameraAccessDescription": "Görüntülü konsültasyonlar için kameranıza erişime izin verin.",
+    "microphoneAccess": "Mikrofon Erişimi",
+    "microphoneAccessDescription": "Konsültasyonlar sırasında ses için mikrofonunuza erişime izin verin.",
+    "dataTransmission": "Güvenli Veri Aktarımı",
+    "dataTransmissionDescription": "Ses ve görüntü verileriniz güvenli bir şekilde iletilecektir (SRTP/DTLS ile şifreli, WSS üzerinden sinyalleşme).",
+    "medicalDataProcessing": "Tıbbi Görüşme Verileri",
+    "medicalDataProcessingDescription": "Konsültasyonlar sırasında görüşülen sağlıkla ilgili verilerin işlenmesi, gizlilik yasalarına uygun olarak yönetilir (örn: KVKK Madde 5/2-c yaşamsal menfaat).",
+    "allConsentsRequired": "Devam etmek için tüm rızaların verilmesi gerekmektedir.",
+    "agreeButton": "Kabul Ediyorum",
+    "declineButton": "Reddet",
+    "declinedMessage": "Rızayı reddettiniz. Oturumunuz sonlandırılacaktır.",
+    "legalReference": "Daha fazla bilgi için lütfen Gizlilik Politikamızı inceleyin. (Ref: GDPR Md. 6(1)(a), KVKK Md. 5/1)"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "theme": {
+      "title": "Uygulama Teması",
+      "light": "Açık",
+      "dark": "Koyu"
+    },
+    "language": {
+      "title": "Dil",
+      "english": "English",
+      "turkish": "Türkçe"
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "enable": "Bildirimleri Etkinleştir"
+    },
+    "account": {
+      "title": "Hesap",
+      "editProfile": "Profili Düzenle",
+      "changePassword": "Şifreyi Değiştir",
+      "manageConsent": "Rıza Ayarları"
+    },
+    "about": {
+      "title": "Hakkında",
+      "privacyPolicy": "Gizlilik Politikası",
+      "termsOfService": "Hizmet Şartları",
+      "version": "Sürüm {{version}}"
+    },
+    "logoutButton": "Çıkış Yap"
+  },
+  "profile": {
+    "errorTitle": "Profil Hatası",
+    "userNotFound": "Kullanıcı profili bulunamadı.",
+    "fetchError": "Profil bilgileri alınamadı.",
+    "avatarAlt": "{{name}} kullanıcısının avatarı",
+    "fullNameLabel": "Tam Adı",
+    "emailLabel": "E-posta Adresi",
+    "roleLabel": "Rol",
+    "editProfile": "Profili Düzenle",
+    "editProfileButton": "Profilimi Düzenle",
+    "featureComingSoon": "Bu özellik geliştirme aşamasındadır.",
+    "goBack": "Geri Dön"
+  },
+  "roles": {
+    "patient": "Hasta",
+    "doctor": "Doktor"
+  },
+  "dashboard": {
+    "welcome": "Hoş geldin, {{name}}!",
+    "guest": "Misafir",
+    "viewProfile": "Profili Görüntüle",
+    "availableDoctors": "Müsait Doktorlar",
+    "callButton": "Ara",
+    "noDoctors": "Şu anda müsait doktor bulunmamaktadır.",
+    "settings": "Ayarlar",
+    "logoutButton": "Çıkış Yap",
+    "errorTitle": "Hata",
+    "userNotFound": "Kullanıcı bulunamadı."
+  },
+  "notifications": {
+    "incomingCall": {
+        "title": "{{callerName}} sizi arıyor",
+        "body": "Cevaplamak veya reddetmek için dokunun."
+    },
+    "appointment": {
+      "started": {
+        "doctor_title": "{{participantName}} ile Görüşmeniz Başladı",
+        "patient_title": "Görüşmeniz Başladı",
+        "body": "Görüşme (ID: {{appointmentId}}) başladı."
+      },
+      "completed": {
+        "doctor_title": "{{participantName}} ile Görüşmeniz Tamamlandı",
+        "patient_title": "Görüşmeniz Tamamlandı",
+        "body": "Görüşme (ID: {{appointmentId}}) sona erdi."
+      },
+      "reminder": {
+        "doctor_title": "Hatırlatma: {{participantName}}",
+        "patient_title": "Randevu Hatırlatması",
+        "body": "{{participantName}} ile olan randevunuz 5 dakika içinde başlayacak."
+      }
+    }
+  }
+}
