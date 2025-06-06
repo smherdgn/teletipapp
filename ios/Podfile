@@ -77,8 +77,10 @@ target 'teletipapp' do
         config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
         
         # Architecture settings
-        config.build_settings['VALID_ARCHS'] = 'arm64'
-        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'i386'
+        # Use the default architectures to avoid missing simulator slices
+        # which can cause the copy of JitsiWebRTC frameworks to fail.
+        config.build_settings.delete('VALID_ARCHS')
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
         
         # Target-specific fixes
         case target.name
